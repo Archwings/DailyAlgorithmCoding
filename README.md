@@ -1,4 +1,4 @@
 # DailyAlgorithmCoding
 
-Collection of Codiing Questions Completed on LeetCode 	
+Collection of Coding Questions Completed on LeetCode 	
 Profile: https://leetcode.com/Archwings/
