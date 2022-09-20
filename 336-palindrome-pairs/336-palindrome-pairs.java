@@ -8,6 +8,8 @@ class Solution {
         // Do the same for the suffix insead of the prefix above, and then search for the prefix. 
         // Note that we dont want to check of 2 of the same words are palendrome, so skip if youre comparing the same word.
         
+        // Note that we use a TreeSet, so that when we find palindromes, we only check for the remaining strings that are of length added in the set.
+        
         HashMap<String, Integer> map = new HashMap<>();
         List<List<Integer>> list = new ArrayList<>();
         Set<Integer> set = new TreeSet<>();
