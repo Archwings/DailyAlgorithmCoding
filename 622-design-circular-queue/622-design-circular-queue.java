@@ -5,53 +5,53 @@ class MyCircularQueue {
 
     public MyCircularQueue(int k) {
         // Initialize the qeuue, we will do this by using a LinkedList data structure
-        queue = new LinkedList<Integer>();
-        size = k;
-        currSize = 0;
+        this.queue = new LinkedList<Integer>();
+        this.size = k;
+        this.currSize = 0;
         
     }
     
     public boolean enQueue(int value) {
-        if (currSize >= size) {
+        if (this.currSize >= this.size) {
             return false;
         } else {
-            queue.add(value);
+            this.queue.add(value);
             currSize++;
             return true;
         }
     }
     
     public boolean deQueue() {
-        if (queue.isEmpty()) {
+        if (this.queue.isEmpty()) {
             return false;
         } else {
-            queue.removeFirst();
-            currSize--;
+            this.queue.removeFirst();
+            this.currSize--;
             return true;
         }
     }
     
     public int Front() {
-        if (!queue.isEmpty()) {
-            return queue.getFirst();
+        if (!this.queue.isEmpty()) {
+            return this.queue.getFirst();
         } else {
             return -1;
         }
     }
     
     public int Rear() {
-        if (!queue.isEmpty()) {
-            return queue.getLast();
+        if (!this.queue.isEmpty()) {
+            return this.queue.getLast();
         }
         return -1;
     }
     
     public boolean isEmpty() {
-        return queue.isEmpty();
+        return this.queue.isEmpty();
     }
     
     public boolean isFull() {
-        return (size == currSize);
+        return (this.size == this.currSize);
     }
 }
 
