@@ -1,7 +1,7 @@
 class MyCircularQueue {
-    LinkedList<Integer> queue;
-    int size;
-    int currSize;
+    private LinkedList<Integer> queue;
+    private int size;
+    private int currSize;
 
     public MyCircularQueue(int k) {
         // Initialize the qeuue, we will do this by using a LinkedList data structure
