@@ -27,7 +27,7 @@ class TimeMap {
             // binary search on the list
             while(left < right) {
                 int middle = (right+left)/2;
-                // needs equals? why
+                // needs equals? why because we want the right pointer to always be to the right of the timestamp we want, if we use just '>' the right pointer will be equal to mid pointer which can lead to the right pointer pointing to the index we want
                 if (timestamp >= list.get(middle).getValue()) {
                     left = middle + 1;
                 } else {
