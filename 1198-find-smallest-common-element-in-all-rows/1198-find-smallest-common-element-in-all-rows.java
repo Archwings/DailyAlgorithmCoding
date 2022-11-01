@@ -10,9 +10,24 @@ class Solution {
             }
         }
         
-        for(int key : treeMap.keySet()){
-            if(treeMap.get(key) == mat.length) {
-                return key;
+        int end = treeMap.lastKey();
+        int start = treeMap.firstKey();
+        
+        int ptr = start;
+        
+        List<Integer> count = new ArrayList<Integer>(treeMap.values());
+        List<Integer> keySet = new ArrayList<Integer>(treeMap.keySet());
+        Object[] countArr = count.toArray();
+        Object[] keysArr = keySet.toArray();
+        
+        
+         System.out.println(treeMap.keySet());
+        
+        
+        for (int i = 0; i < countArr.length; i++) {
+            //System.out.println(countArr[i]);
+            if ((Integer)countArr[i] == rows) {
+                return (Integer)keysArr[i]; 
             }
         }
         return -1;
