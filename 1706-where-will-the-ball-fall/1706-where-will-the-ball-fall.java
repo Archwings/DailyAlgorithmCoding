@@ -3,8 +3,6 @@ class Solution {
         //O(n*nm) where we will check conditions to determine if the ball will make it to the bottom
         int rows = grid.length;
         int cols = grid[0].length;
-        System.out.println(rows);
-        System.out.println(cols);
         int[] output = new int[cols];
         for (int i = 0; i < cols; i++) {
             boolean isStuck = false;
