@@ -21,7 +21,7 @@ class Solution {
         Object[] keysArr = keySet.toArray();
         
         
-         System.out.println(treeMap.keySet());
+         //System.out.println(treeMap.keySet());
         
         
         for (int i = 0; i < countArr.length; i++) {
