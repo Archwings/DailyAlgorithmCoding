@@ -3,8 +3,9 @@ class Solution {
         // Use two pointers method where we find the first duplicate, remove it, then decrement the pointers by 1 and check if they are pointing to a duplicate. 
         int left = 0;
         int right = 1;
+        int length = s.length();
         
-        while (right < s.length()) {
+        while (right < length) {
             if (s.charAt(left) == s.charAt(right)) {
                 s = s.substring(0, left) + s.substring(right+1);
                 if (left == 0 ) {
@@ -14,6 +15,8 @@ class Solution {
                    left--;
                     right--; 
                 }
+                length--;
+                length--;
             } else {
                 left++;
                 right++;
