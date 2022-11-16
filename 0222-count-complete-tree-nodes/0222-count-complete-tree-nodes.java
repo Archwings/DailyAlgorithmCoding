@@ -51,7 +51,6 @@ class Solution {
         int bottomNodeCount = (int) Math.pow(2, height);
         int curr =  bottomNodeCount / 2; 
         while (currLv != height) {
-            System.out.println(curr + " " +"curr");
             if (index >= curr) {
                 // index is on the right branch
                 root = root.right;
