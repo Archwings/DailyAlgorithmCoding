@@ -37,12 +37,8 @@ class Solution {
             
             if (doesExist(root, mid, height)) {
                 left = mid + 1;
-                System.out.println(left);
-                System.out.println(right);
             } else {
                 right = mid - 1;
-                System.out.println(left);
-                System.out.println(right);
             }
         }
         //calculate the max with left
@@ -51,7 +47,6 @@ class Solution {
     }
     private boolean doesExist(TreeNode root, int index, int height) {
         //int curr = (int) (Math.pow(2, height))/2;
-        System.out.println(index + " " +"index");
         int currLv = 0;
         int bottomNodeCount = (int) Math.pow(2, height);
         int curr =  bottomNodeCount / 2; 
@@ -69,8 +64,6 @@ class Solution {
                 root = root.left;
             }
         }
-        //System.out.println(currLv + "currlevel");
-        System.out.println(root +" "+ index);
         return (root != null);
     }
 }
