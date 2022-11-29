@@ -22,7 +22,7 @@ class RandomizedSet {
     public boolean remove(int val) {
         if (map.containsKey(val)) {
             int index = map.get(val);
-            int lastElement = list.get(map.size() - 1);
+            int lastElement = list.get(list.size() - 1);
             list.set(index, lastElement);
             map.put(lastElement, index);
             
